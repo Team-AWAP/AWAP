@@ -4,7 +4,7 @@ description: "<em><strong>A</strong>utonome <strong>W</strong>asser<strong>a</st
 #subheading: "Really cool blog about ... something"
 more: "read more"
 url: "https://team-awap.github.io"
-baseurl: "/AWAP/"
+baseurl: "/AWAP"
 email: "projekt.awap@gmail.com"
 github_username:  "projekt-awap"
 
