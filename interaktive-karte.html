@@ -5,15 +5,15 @@ permalink: /interaktive-karte/
 menu: main
 weight: 5
 ---
-<link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" href="/AWAP/css/leaflet.css" />
 <div id="map" style="width: auto; height: 50em"></div>
 
-    <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="/AWAP/assets/js/leaflet.js"></script>
 	<script>
         
         //Map tiles
-        var map_url = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png";
-        var map_attributions = "&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors, &copy; <a href='http://cartodb.com/attributions'>CartoDB</a>";
+        var map_url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+        var map_attributions = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
 
 		var map = L.map('map').setView([51.505, -0.09], 13);
 
