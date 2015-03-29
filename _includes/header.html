@@ -1,0 +1,8 @@
+<header class="site-header">
+          {% unless site.style.headline %}<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>{% endunless %}
+      <nav>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Neuigkeiten</a></li>{% assign pages = site.pages | sort: 'weight' %} {% for p in pages %}{% if p.menu == 'main' %}<li><a href="{{ p.url | prepend: site.baseurl }}"{% if page.url == p.url %} id="selected"{% endif %}>{{ p.title }}</a></li>{% endif %}{% endfor %}
+        </ul>
+      </nav>
+</header>

@@ -1,0 +1,25 @@
+title: "Projekt AWAP"
+author: "TEAM AWAP"
+description: "<em><strong>A</strong>utonome <strong>W</strong>asser<strong>a</strong>nalyse<strong>p</strong>lattform</em>"
+#subheading: "Really cool blog about ... something"
+more: "read more"
+url: "http://projekt-awap.de"
+#baseurl: "Team-AWAP"
+email: "projekt.awap@gmail.com"
+github_username:  "projekt-awap"
+
+style:
+#    body: "whitesmoke"
+    padding: 33%
+    anchor: "#46f"
+    serif-heading: true
+    nav: "#181818"
+#    headline: "#06f"
+    description: "white"
+    article:
+        odd: "#ffffff"
+        even: "#222222"
+
+
+excerpt_separator: "<!--more-->"
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
