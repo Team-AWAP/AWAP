@@ -29,8 +29,10 @@ void loop() {
     //Get the values and send the message
     //Other sensor function need to be added
     if( get_gps() ) {
-      sprintf(str,"%f%f", gps.location.lat(), gps.location.lng());
+      sprintf(str,"%f,%f,", gps.location.lat(), gps.location.lng());
     }
+    else
+      sprintf(str, "invalid, invalid,");
   }
   isbd.sendSBDBinary((uint8_t *) str, SIZEOFSTR);
   //Fall in sleep again
