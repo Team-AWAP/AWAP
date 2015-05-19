@@ -35,7 +35,7 @@ void loop() {
       sprintf(str, "invalid, invalid,");
   }
   isbd.sendSBDBinary((uint8_t *) str, SIZEOFSTR);
-  //Fall in sleep again
+  //Fall asleep again
   isbd.sleep();
   delay(1000); //wait one sec
   ssIridium.end();
