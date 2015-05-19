@@ -21,9 +21,9 @@ void setup() {
 void loop() {
   //Wake up the RockBlock and listen to it
   ssIridium.begin(IRIDIUM_BAUD);
-  delay(1000); //wait a bit
+  delay(1000); //wait one sec
   ssIridium.listen();
-  delay(1000); //wait a bit
+  delay(1000); //wait one sec
   
   if( isbd.begin() == ISBD_SUCCESS ) {
     //Get the values and send the message
